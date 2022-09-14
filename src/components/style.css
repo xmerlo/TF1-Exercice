@@ -1,0 +1,38 @@
+.lists {
+  margin: 20px;
+  min-width: 500px;
+  width: 95%
+}
+
+.lists:first-child {
+  margin-top: 20px;
+}
+
+.lists h2 {
+  padding-left: 70px;
+  margin-bottom: 10px;
+}
+
+.react-horizontal-scrolling-menu--scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.react-horizontal-scrolling-menu--scroll-container {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.program {
+  margin: 10px;
+  margin-top: 100px;
+}
+.programImg :hover {
+  transform: scale(1.1);
+}
+
+
+
+.react-horizontal-scrolling-menu--arrow-left, .react-horizontal-scrolling-menu--arrow-right {
+  display: block;
+  margin: auto;
+}
