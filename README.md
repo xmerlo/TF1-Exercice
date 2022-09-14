@@ -1,46 +1,27 @@
-# Getting Started with Create React App
+# Exercice TF1
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Ce projet a été fait dans le adre d'un exercice pour TF1.
 
-## Available Scripts
+## Exécuter ce projet
 
-In the project directory, you can run:
+Après avoir télécharger ce projet, il faut dans un premier temps installer les dépendances avec
+`npm install`, puis l'exécuter avec `npm start`.
 
-### `npm start`
+## Choix de conceptions
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Librairie react-horizontal-scrolling-menu
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+J'ai utilisé cette librairie car elle simplifie grandement la création d'un contenaire où l'on peut faire défiler des éléments.
 
-### `npm test`
+### Librairie material-ui
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Cette librairie a été utilisé pour simplifier la création de boutons icônes.
+J'ai choisi cette librairie car je l'ai déjà beaucoup utilisé dans divers projets, je sais donc qu'elle est simple à prendre en main, qu'elle comporte beaucoup de fonctionnalités intéressantes et qu'elle est très fiable.
 
-### `npm run build`
+### Gestion des erreurs
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Pour ce projet, j'ai simplifié certains points et il faudrait gérer un peu plus d'erreurs dans le cadre d'une mise en production.
+  - Gérer une plus grande quantité de données. Dans cet exercice, je limite les résultats à 20 occurences, dans la réalité, il faudrait réfléchir à si l'onprend tous les résultats, est-ce qu'il faudrait ajouter des filtres et si l'on recueille une grande quantité de données, comment gérer les potentiels problèmes de performance.
+  - Gérer les potentielles erreurs de données. Dans cet exercice, j'affiche tous éléments que je reçois. Dans la réalité, il faudrait vérifier que ces donnéessont correctes. Si elles le sont que partiellement, comme par exempleune image manquante, est-ce qu'il faudrait quand même afficher le programme, quitte à éventuellement perturber l'utilisateur avec un texte alternatif ou une image générique, ou alors le bon choix serait peut-être de ne pas afficher le programme.
+  - il faudrait se mettre d'accord sur le nombre maximum de caractères qu'un titre peut avoir pour ne pas nuire à l'ergonomie de l'interface
+  - Améliorations possible : Lorsque l'on passe la souris un programme, si son titer est trop long, l'afficher en entier.
